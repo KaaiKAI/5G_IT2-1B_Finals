@@ -44,6 +44,25 @@ toggle.onclick = function() {
           logos.style.transform = `translateY(45%) translateX(-${scrollValue * 2}px)`;
       });
   
+      const cfBox = document.querySelector('.CFbox');
+
+
+      cfBox.addEventListener('mousemove', (e) => {
+          const { offsetWidth: width, offsetHeight: height } = cfBox;
+          const { offsetX: x, offsetY: y } = e;
+          const rotateX = ((y / height) - 0.5) * -20; // Adjust tilt based on Y
+          const rotateY = ((x / width) - 0.5) * 20;  // Adjust tilt based on X
+  
+  
+          cfBox.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+      });
+  
+  
+      cfBox.addEventListener('mouseleave', () => {
+          cfBox.style.transform = `rotateX(0) rotateY(0)`; // Reset rotation
+      });
+  
+  
 
 
 var swiper = new Swiper(".slidecontent", {
