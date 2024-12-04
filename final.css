@@ -209,7 +209,7 @@ header .logo .school-text {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #D4EBF8
+    color: #D4EBF8;
 }
 
 .sidebar .icon2 {
@@ -218,13 +218,13 @@ header .logo .school-text {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #D4EBF8
+    color: #D4EBF8;
 }
 
 .sidebar .sidebar-text {
     padding: 5%;
     line-height: 1.5;
-    color: #D4EBF8
+    color: #D4EBF8;
 }
 
 .sidebar li a {
@@ -239,7 +239,8 @@ header .logo .school-text {
 }
 
 .sidebar li a:hover {
-    background: var(--primary-color-light);
+    opacity: 80%;
+    background: var(--neon-color);
     border-radius: 5px;
 }
 
@@ -256,7 +257,9 @@ header .logo .school-text {
     position: absolute;
     left: calc(100% + 15px);
     z-index: 3;
-    background-color: var(--primary-color-light);
+    font-weight: 600;
+    color: var(--sidebar-color);
+    background-color: var(--neon-color);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     padding: 6px 14px;
     border-radius: 5px;
@@ -806,7 +809,7 @@ header .logo .school-text {
     padding: 5%;
 }
 
-.slidecontainer {
+.gallerywrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -815,18 +818,18 @@ header .logo .school-text {
     padding: 40px 0;
 }
 
-.slidecontent {
+.galleryinfo {
     margin: 0 40px;
 }
 
-.card {
+.picture {
     width: 320px;
     border-radius: 25px;
     background-color: #fff;
 }
 
 .imagecontent,
-.cardcontent {
+.pictureinfo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -839,7 +842,7 @@ header .logo .school-text {
     padding: 25px 0;
 }
 
-.overlay {
+.overlays {
     position: absolute;
     left: 0;
     top: 0;
@@ -849,8 +852,8 @@ header .logo .school-text {
     border-radius: 25px 25px 0 25px;
 }
 
-.overlay::before,
-.overlay::after {
+.overlays::before,
+.overlays::after {
     content: '';
     position: absolute;
     right: 0;
@@ -860,7 +863,7 @@ header .logo .school-text {
     background-color: var(--primary-color-light);
 }
 
-.overlay::after {
+.overlays::after {
     border-radius: 0 25px 0 0;
     background-color: white;
 }
@@ -894,7 +897,7 @@ header .logo .school-text {
     color: #333;
 }
 
-.desc {
+.motto {
     font-size: 14px;
     color: black;
     text-align: center;
@@ -902,7 +905,6 @@ header .logo .school-text {
 }
 
 /*End of Developers' Profile*/
-
 /*=====End of Section=====*/
 
 /*=====Start of footer=====*/
@@ -981,7 +983,7 @@ footer .contacts .text a:hover {
 
 /*======Start of Media=====*/
 
-/*For PC*/
+/*For PC
 @media (min-width: 1367px) {
 
     .sidebar {
@@ -994,10 +996,10 @@ footer .contacts .text a:hover {
         width: 5.5%;
     }
 
-}
+}*/
 
 /*For Laptop*/
-@media (max-width: 1366px) {
+@media (max-width: 1440px) {
 
     .urs {
         margin-left: 50%;
@@ -1458,11 +1460,11 @@ footer .contacts .text a:hover {
     }
 
     footer .socialbar li {
-        padding: 5%;
+        padding: 0%;
     }
 
     footer .contacts .text {
-        font-size: 6px;
+        font-size: 50%;
         padding: 5px;
     }
 
